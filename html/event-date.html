@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/common/base.css">
+    <link rel="stylesheet" href="../css/common/material-icons.css">
+    <link rel="stylesheet" href="../css/common/title-header.css">
+    <link rel="stylesheet" href="../css/common/steps-event-footer.css">
+    <link rel="stylesheet" href="../css/common/overlay.css">
+    <link rel="stylesheet" href="../css/event-date.css">
+    <script defer src="../js/common/user-manager.js"></script>
+    <script defer src="../js/common/title-header.js"></script>
+    <script defer src="../js/common/scrollable.js"></script>
+    <script defer src="../js/common/overlay.js"></script>
+    <script defer src="../js/event-date.js"></script>
+</head>
+<body>
+    <div class="container">
+        <title-header previous-page="event-people.html">Criar Evento</title-header>
+
+        <div class="content-container">
+            <div class="tab-buttons-container">
+                <div class="tab-button-background">
+                    <div class="tab-button-background-slider"></div>
+                    <button class="start-event-button active-tab">Início</button>
+                    <button class="end-event-button">Fim</button>
+                </div>
+            </div>
+
+            <ul class="tabs-container">
+                <li>
+                    <div class="date-tab">
+                        <div class="input-container">
+                            <p class="label">Hora:</p>
+                            <p id="time-start" class="start-time-button border-click">00:00</p>
+                        </div>
+                        <div class="input-container">
+                            <p class="label">Data:</p>
+                            <p id="date-start" class="date-button border-click"></p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="date-tab">
+                        <div class="input-container">
+                            <p class="label">Hora:</p>
+                            <p id="time-end" class="end-time-button border-click">00:01</p>
+                        </div>
+                        <div class="input-container">
+                            <p class="label">Data:</p>
+                            <p id="date-end" class="date-button border-click"></p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="error">
+                <span id="warning" class="material-symbols-outlined">warning</span>
+                <p id="warning-text"></p>
+            </div>
+            <div class="buttons-container">
+                <div id="cancel-button" class="button">Cancelar</div>
+                <div id="next-button" class="button">Seguinte</div>
+            </div>
+
+            <!-- <h1 class="event-action-name">Data e Hora</h1>
+            <div class="input-container">
+                <div class="input-holder">
+                    <p class="label">Inicio:</p>
+                    <div class="border-click"><p id="time-start" class="start-time-button">00:00</p></div>
+                </div>
+                <div class="input-holder">
+                    <p class="label">Fim:</p>
+                    <div class="border-click"><p id="time-end" class="end-time-button">00:01</p></div>
+                </div>
+                <div class="input-holder">
+                    <p class="label">Data:</p>
+                    <p class="date-button border-click"></p>
+                </div>
+            </div> -->
+        </div>
+
+        <display-overlay class="time-overlay">
+            <div class="time-container">
+                <ul id="hh" class="show-time">
+                    <!-- <li class="current-hh">1</li> -->
+                </ul>
+                <p>:</p>
+                <ul id="mm" class="show-time"></ul>
+            </div>
+            <div class="buttons">
+                <span id="cancel-button-time" class="material-symbols-outlined">cancel</span>
+                <span id="confirm-button-time" class="material-symbols-outlined">check_circle</span>
+            </div>
+        </display-overlay>
+
+        <display-overlay class="date-overlay">
+            <div class="date-container">
+                <ul id="dd" class="show-time"></ul>
+                <p>/</p>
+                <ul id="MM" class="show-time"></ul>
+                <p>/</p>
+                <ul id="yyyy" class="show-time"></ul>
+            </div>
+            <div class="buttons">
+                <span id="cancel-button-date" class="material-symbols-outlined">cancel</span>
+                <span id="confirm-button-date" class="material-symbols-outlined">check_circle</span>
+            </div>
+        </display-overlay>
+
+        <popup-overlay class="confirm-overlap-events-popup-overlay">
+            <div class="confirm-overlap-events-popup-title-container">
+                <h1></h1>
+            </div>
+            <div class="confirm-overlap-events-popup-buttons">
+                <button class="overlap-events-alterar-button ripple-button">Alterar</button>
+                <button class="overlap-events-continuar-confirm-button ripple-button">Continuar</button>
+            </div>
+        </popup-overlay>
+
+    </div>
+</body>
+</html>

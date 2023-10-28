@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/common/base.css">
+    <link rel="stylesheet" href="../css/common/material-icons.css">
+    <link rel="stylesheet" href="../css/common/title-header.css">
+    <link rel="stylesheet" href="../css/common/steps-event-footer.css">
+    <link rel="stylesheet" href="../css/common/overlay.css">
+    <link rel="stylesheet" href="../css/event-images.css">
+    <link rel="stylesheet" href="../css/event-image.css">
+    <script defer src="../js/common/title-header.js"></script>
+    <script defer src="../js/common/overlay.js"></script>
+    <script defer src="../js/common/event-images.js"></script>
+    <script defer src="../js/event-image.js"></script>
+</head>
+
+<body>
+    <title-header previous-page="event-title.html">Criar Evento</title-header>
+
+    <div class="container">
+        <div class="content-container">
+
+            <div class="banner"></div>
+
+            <div class="event-title-container">
+                <div class="event-title-background">
+                    <p id="title" class="event">Imagem</p>
+                </div>
+            </div>
+
+            <div class="image-selected">
+                <!--em CSS-------- <image id="pic-selected" src="../images/event-pics/beach.jpg"></image> -->
+                <div id="edit-button">
+                    <span id="icon-edit" class="material-symbols-outlined">edit</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="buttons-container">
+            <div id="cancel-button" class="button">Cancelar</div>
+            <div id="next-button" class="button">Seguinte</div>
+        </div>
+
+        <display-overlay>
+            <div class="first-container-grid">
+
+                <div class="img-grid-container">
+
+                    <div id="elem1" class="grid-item selected-elem-grid-border event-image-beach">
+                        <div id="selected-elem-grid-check">
+                            <span id="icon-check" class="material-symbols-outlined material-fill">check_circle</span>
+                        </div>
+                    </div>
+
+                    <div id="elem2" class="grid-item event-image-forest"></div>
+                    <div id="elem3" class="grid-item event-image-books"></div>
+                    <div id="elem4" class="grid-item event-image-food"></div>
+                    <div id="elem5" class="grid-item event-image-game"></div>
+                    <div id="elem6" class="grid-item event-image-movie"></div>
+                    <div id="elem7" class="grid-item event-image-shop"></div>
+                    <div id="elem8" class="grid-item event-image-travel"></div>
+                    <div id="elem9" class="grid-item event-image-friends"></div>
+                </div>
+            </div>
+        </display-overlay>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/common/base.css">
+    <link rel="stylesheet" href="../css/common/material-icons.css">
+    <link rel="stylesheet" href="../css/common/title-header.css">
+    <link rel="stylesheet" href="../css/event-created.css">
+    <script defer src="../js/common/user-manager.js"></script>
+    <script defer src="../js/common/title-header.js"></script>
+    <script defer src="../js/event-created.js"></script>
+    <script>
+        const audio = new Audio("../sounds/success.mp3");
+        audio.play();
+        navigator.vibrate([150]);
+
+        sessionStorage.removeItem("event_last_index");
+    </script>
+</head>
+<body>
+    <div class="container">
+        <title-header previous-page="event.html"></title-header>
+
+        <div class="content-container">
+            <span class="material-symbols-outlined">check_circle</span>
+            <p>Evento criado com sucesso!</p>
+        </div>
+    </div>
+</body>
+</html>

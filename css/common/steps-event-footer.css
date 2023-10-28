@@ -1,0 +1,33 @@
+.buttons-container {
+    margin-top: .2cm;
+    height: .5cm;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: end;
+    position: absolute;
+    top: 9.2rem;
+    z-index: 1;
+    padding: 0;
+    margin: 0;
+}
+
+.button {
+    width: 40%;
+    color: #e9ecef;
+    font-size: .3cm;
+    text-align: center;
+    border-radius: 10px;
+    cursor: auto;
+}
+
+#next-button {
+    background-color: #8a8989;
+    text-shadow: 0.5px 1px #2b2a2a;
+}
+
+#cancel-button {
+    background-color: #b62d43;
+    text-shadow: 0.5px 1px #411821;
+    cursor: pointer;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/common/base.css">
+    <link rel="stylesheet" href="../css/common/material-icons.css">
+    <link rel="stylesheet" href="../css/common/title-header.css">
+    <link rel="stylesheet" href="../css/common/overlay.css">
+    <link rel="stylesheet" href="../css/occupied-day.css">
+    <script defer src="../js/common/speech-recognition.js"></script>
+    <script defer src="../js/common/title-header.js"></script>
+    <script defer src="../js/common/overlay.js"></script>
+    <script defer src="../js/common/scrollable.js"></script>
+    <script defer src="../js/occupied-day.js"></script>
+</head>
+
+<body>
+    <title-header previous-page="view-day.html">Calendário</title-header>
+
+    <div class="day-selected">
+        <p id="title">Hora ocupada</p>
+        <p id="day"></p>
+    </div>
+
+    <div class="container-inner">
+
+        <div class="set-hours">
+            <div class="start">
+                <p class="labels">Início:</p>
+                <div class="border-click"><p id="time-start">00:00</p></div>
+            </div>
+            <div class="end">
+                <p class="labels">Fim:</p>
+                <div class="border-click"><p id="time-end">00:01</p></div>
+            </div>
+        </div>
+        <div class="error">
+            <span id="warning" class="material-symbols-outlined">warning</span>
+            <p id="warning-text"></p> <!--Sobreposição de horários-->
+        </div>
+        <div class="description">
+            <label>
+                <input type="text" value="" placeholder="Descrição" spellcheck="false">
+                <span id="mic-button" class="material-symbols-outlined">mic</span>
+            </label>
+        </div>
+
+        <div class="buttons">
+            <span id="cancel-button" class="material-symbols-outlined">cancel</span>
+            <span id="confirm-button" class="material-symbols-outlined">check_circle</span>
+        </div>
+
+        <display-overlay>
+            <div class="time-container">
+                <ul id="hh" class="show-time">
+                    <!-- <li class="current-hh">1</li> -->
+                </ul>
+                <p>:</p>
+                <ul id="mm" class="show-time"></ul>
+            </div>
+            <div class="buttons">
+                <span id="cancel-button-time" class="material-symbols-outlined">cancel</span>
+                <span id="confirm-button-time" class="material-symbols-outlined">check_circle</span>
+            </div>
+        </display-overlay>
+        
+    </div>
+</body>
+
+</html>

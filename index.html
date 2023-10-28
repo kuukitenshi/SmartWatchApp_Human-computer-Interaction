@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProjetoA - 58180 - 58188</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/common/material-icons.css">
+    <link rel="stylesheet" href="css/common/ripple-button.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <script defer src="js/index.js"></script>
+    <script defer src="js/common/ripple-button.js"></script>
+</head>
+<body>
+    <div class="container">
+
+        <div class="absolute-container">
+            <div class="info-card display-hidden hide-transition">
+                <h1>Informações</h1>
+                <ul>
+                    <li class="warning-info"><span class="material-symbols-outlined">warning</span>Projeto testado no chrome em windows.</li>
+                    <li class="info-info"><span class="material-symbols-outlined">priority_high</span>Na aba da esquerda pode aceder à lista de tarefas.</li>
+                    <li class="info-info"><span class="material-symbols-outlined">priority_high</span>Na aba da direita pode aceder às "dev tools" básicas.</li>
+                    <li class="info-info"><span class="material-symbols-outlined">priority_high</span>A interface possui som, recomenda-se aumentar o volume.</li>
+                </ul>
+            </div>
+
+            <div class="info-button-container">
+                <span class="material-symbols-outlined outline-circle material-fill">circle
+                    <span class="material-symbols-outlined info-button">priority_high</span>
+                </span>
+            </div>
+        </div>
+
+        <div class="side-bar left-bar hide-transition">
+            <div class="side-bar-content-container left-bar-content-container left-sidebar-list">
+                <h1 class = "title">Tarefas</h1>
+                <ul class="sidebar-list left-sidebar-list">
+                    <li class="task-card display-hidden">
+                        Adicione um amigo ao enconstar o relógio (o sensor poderá falhar e ser necessário tentar novamente).
+                    </li>
+                    <li class="task-card display-hidden">
+                        Crie um evento de jantar com 2 dos seus amigos, num restaurante de sushi. Coloque no título 'Jantar', escolha a imagem com comida, adicione dois amigos à sua escolha, coloque na hora de início '20:00' e de fim '21:00', que seja para amanhã, no local coloque 'Sushi entrecampos' e na descrição coloque 'Jantar de aniversário'.
+                    </li>
+                    <li class="task-card display-hidden">
+                        Marque no calendário, no dia de hoje, a hora da aula de IPM (13:30-15:00) como ocupada, com a descrição 'Aula IPM'.
+                    </li>
+                    <li class="task-card display-hidden">
+                        Edite o perfil, altere a fotografia e o nome do mesmo.
+                    </li>
+
+                    <li><h1 class = "title">Tarefas Extra</h1></li>
+
+                    <li class="task-card display-hidden">
+                        Remova um dos seus amigos.
+                    </li>
+                    <li class="task-card display-hidden">
+                        Aceite e recuse pedidos de amizade.
+                    </li>
+                    <li class="task-card display-hidden">
+                        Adicione um amigo através de código (insira um código inválido para ver a mensagem de erro).
+
+                        (Lista de códigos válidos [101010, 202020, 303030, ..., 909090, 110110, 120120]).
+                    </li>
+                    <li class="task-card display-hidden">
+                        Marque no calendário, no dia de hoje, a aula de 'Sistemas Operativos', e coloque na hora de início '15:00' e na hora de fim '16:00'.
+                    </li>
+                    <li class="task-card display-hidden">
+                        Tente marcar no dia de hoje um horário com conflito, ou seja, marque como hora de início '14:00' e como hora de fim '16:00', e coloque uma descrição à sua escolha. Repare que não é permitido criar essa hora devido a conflitos com as anteriormente marcadas. Pode cancelar e avançar para a próxima tarefa.
+                    </li>
+                    <li class="task-card display-hidden">
+                        Marque a hora da aula de IPM (13:30-15:00) da próxima semana (dia 11/05/2023) como ocupada.
+                    </li>
+                    <li class="task-card display-hidden">
+                        Edite a hora da aula de IPM (13:30-15:00) da próxima semana, que marcou anteriormente, no calendário para esta ocorrer ente as 13:40 e as 15:20.
+                    </li>
+                    <li class="task-card display-hidden">
+                        Crie um evento à sua escolha que dure vários dias.
+                    </li>
+                    <li class="task-card display-hidden">
+                        Aceite um evento pendente e recuse outro.
+                    </li>
+                    <li class="task-card display-hidden">
+                        Veja mais informações sobre um evento.
+                    </li>
+                    <li class="task-card display-hidden">
+                        Saia de um evento atual.
+                    </li>
+                    <li class="task-card display-hidden">
+                        Edite um evento criado.
+                    </li>
+                    <li class="task-card display-hidden">
+                        Desmarque um evento criado.
+                    </li>
+                </ul>
+            </div>
+            <div class="bar-arrow-container left-bar-arrow-container">
+                <div class="arrow-box left-arrow-box">
+                    <span class="material-symbols-outlined">chevron_right</span>
+                </div>
+            </div>
+        </div>
+
+        <main>
+            <div id="watch-container">
+                <img id="bracelet" src="images/bracelet.png" alt="">
+                <div id="watch">
+                    <iframe frameborder="0" src="html/main-menu.html"></iframe>
+                </div>
+            </div>
+        </main>
+
+        <div class="side-bar right-bar hide-transition"> <!--display-hidden-->
+            <div class="bar-arrow-container right-bar-arrow-container">
+                <div class="arrow-box right-arrow-box">
+                    <span class="material-symbols-outlined">chevron_left</span>
+                </div>
+            </div>
+            <div class="side-bar-content-container right-bar-content-container hide-scrollbar">
+                <h1 class = "title">Dev Tools</h1>
+                <ul class="sidebar-list right-sidebar-list hide-scrollbar">
+                    <li class="display-hidden"><button class="reset-app-button ripple-button">Reset App</button></li>
+                    <li class="display-hidden"><button class="go-to-screen-button ripple-button">Go to screen</button></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

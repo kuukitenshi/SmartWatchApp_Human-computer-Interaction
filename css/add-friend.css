@@ -1,0 +1,46 @@
+main {
+    padding-top: .5cm;
+    display: flex;
+    flex-direction: row;
+    height: 3.7cm;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.button-container {
+    width: 1.8cm;
+    height: 2.6cm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.button-container span {
+    font-size: 1.4cm;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #deaaff;
+}
+
+.button-container span span {
+    position: absolute;
+    font-size: .8cm;
+    color: #deaaff;
+}
+
+.button-container:last-child span span {
+    font-size: 1cm;
+}
+
+.button-container p {
+    margin: .1cm 0 0 0;
+    color: #e9ecef;
+    font-weight: bold;
+    text-align: center;
+    font-size: .6rem;
+}

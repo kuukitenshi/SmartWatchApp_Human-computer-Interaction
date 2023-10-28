@@ -1,0 +1,41 @@
+body {
+    background: linear-gradient(#b863ec, #0f0f0f);
+}
+
+.title-header {
+    background-color: transparent;
+}
+
+.content-container {
+    padding-top: .8cm;
+    width: 100%;
+    height: 3.7cm;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-container span {
+    font-size: 1.8cm;
+    color: #deaaff;
+    animation: icon-show-animation .6s ease;
+}
+
+.content-container p {
+    color: #e9ecef;
+    text-align: center;
+    font-size: .8rem;
+}
+
+@keyframes icon-show-animation {
+    0% {
+        transform: rotate(-45deg);
+    }
+    60% {
+        transform: rotate(30deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}

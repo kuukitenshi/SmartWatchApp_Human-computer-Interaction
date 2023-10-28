@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/common/base.css">
+    <link rel="stylesheet" href="../css/common/material-icons.css">
+    <link rel="stylesheet" href="../css/common/title-header.css">
+    <link rel="stylesheet" href="../css/common/overlay.css">
+    <link rel="stylesheet" href="../css/common/ripple-button.css">
+    <link rel="stylesheet" href="../css/event-images.css">
+    <link rel="stylesheet" href="../css/view-event.css">
+    <script defer src="../js/common/overlay.js"></script>
+    <script defer src="../js/common/title-header.js"></script>
+    <script defer src="../js/common/ripple-button.js"></script>
+    <script defer src="../js/common/user-manager.js"></script>
+    <script defer src="../js/common//event-images.js"></script>
+    <script defer src="../js/view-event.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <title-header previous-page="event.html">Evento</title-header>
+        <div class="content-container hide-scrollbar">
+
+            <div class="event-banner banner"></div>
+            
+            <div class="event-title-container">
+                <div class="event-title-background">
+                    <h1 class="event-title"></h1>
+                </div>
+            </div>
+
+            <div class="date-time-container">
+                <p class="event-date">21/04/2023 - 21/04/2024</p>
+                <p class="event-time">21:30 - 22:30</p>
+            </div>
+
+            <div id="edit-button" class="display-hidden">
+                <span id="icon-edit" class="material-symbols-outlined">edit</span>
+            </div>
+
+            <div class="options-container">
+
+                <span class="option-button material-symbols-outlined people-button">circle
+                    <span class="material-symbols-outlined">group</span>
+                </span>
+                <span class="option-button material-symbols-outlined location-button">circle
+                    <span class="material-symbols-outlined">location_on</span>
+                </span>
+                <span class="option-button material-symbols-outlined description-button">circle
+                    <span class="material-symbols-outlined">feed</span>
+                </span>
+                
+            </div>
+
+            <footer class="event-footer-container">
+                <!-- <p class="created-by-label">Criado por: <br><span></span></p> -->
+                <button class="leave-or-quit-button ripple-button display-hidden">Sair</button>
+            </footer>
+        </div>
+    </div>
+
+    <display-overlay class="people-overlay">
+        <h1 class="overlay-title people-overlay-title">Participantes</h1>
+        <ul class="people-list hide-scrollbar">
+        </ul>
+    </display-overlay>
+    <popup-overlay class="location-overlay">
+        <span class="material-symbols-outlined location-overlay-close-button information-overlay-close-button">close</span>
+        <h1 class="overlay-title location-overlay-title">Local</h1>
+        <div class="overlay-text-information-container hide-scrollbar">
+            <p class="overlay-text-information location-text"></p>
+        </div>
+    </popup-overlay>
+    <popup-overlay class="description-overlay">
+        <span class="material-symbols-outlined description-overlay-close-button information-overlay-close-button">close</span>
+        <h1 class="overlay-title description-overlay-title">Descrição</h1>
+        
+        <div class="overlay-text-information-container hide-scrollbar">
+            <p class="overlay-text-information description-text"></p>
+        </div>
+    </popup-overlay>
+    <popup-overlay class="remove-event-overlay">
+        <div class="remove-event-popup-title-container">
+            <h1>Deseja sair do evento?</h1>
+        </div>
+        <div class="remove-event-popup-buttons">
+            <button class="remove-cancel-button ripple-button">Cancelar</button>
+            <button class="remove-confirm-button ripple-button">Sair</button>
+        </div>
+    </popup-overlay>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+.title-header {
+    width: 100%;
+    height: .8cm;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    background-color: #0f0f0f;
+}
+
+.title-header span {
+    cursor: pointer;
+    font-size: .5cm;
+    position: absolute;
+    color: #e9ecef;
+}
+
+#goBack {
+    left: .1cm;
+}
+
+#home {
+    left: 3.85cm;
+}
+
+.title-header h1 {
+    margin: 0;
+    font-size: .8rem;
+    color: #e9ecef;
+}

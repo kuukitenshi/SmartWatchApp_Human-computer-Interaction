@@ -1,0 +1,60 @@
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.content-container {
+    width: 100%;
+    height: 3.7cm;
+    padding-top: .8cm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.event-action-name {
+    color: #deaaff;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 3.2cm;
+    height: 1.5cm;
+}
+
+#mic-button {
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #81bcf1;
+}
+
+.input-container input {
+    color: #e9ecef;
+    text-align: center;
+}
+
+.input-container input:focus {
+    outline: none;
+}
+
+.input-container input[type=text] {
+    border: none;
+    background-color: #0f0f0f;
+    border-bottom: .01cm #3f3f3f solid;
+    width: 3.2cm;
+}
+
+#next-button {
+    background-color: #3f3f3f;
+    text-shadow: 0.5px 1px #2b2a2a;
+}
+
+.valid-next-button {
+    background-color: #257a3f !important;
+    text-shadow: 0.5px 1px #07251d;
+}

@@ -1,0 +1,235 @@
+body {
+    color: #e9ecef;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    font-size: .75rem;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+    width: .5cm;
+    height: .8cm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #3f3f3f;
+}
+
+.day-selected {
+    color: #ea5b7a; 
+    display: flex;
+    justify-content: end;
+    padding: .8cm .2rem .2rem 0;
+}
+
+.day-selected {
+    font-size: .8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#day {
+    font-weight: bold; 
+}
+
+#title {
+    color: #ea5b7a;
+    padding-left: .2rem;
+}
+
+/*----------------------------------------*/
+.container-inner {
+    display: flex;
+    flex-direction: column;
+}
+
+.set-hours {
+    padding: .1rem .9rem 0 .9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.description {
+    padding: 0 .1rem .1rem .1rem;
+}
+
+.start, .end {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: .13rem;
+}
+
+.error {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    padding: .2rem 0 0 .1rem;
+    opacity: 0;
+    transition: opacity .3s ease;
+    margin-left: .6rem;
+}
+
+#warning {
+    font-size: .8rem;
+    color: #eeb032;
+}
+
+#warning-text {
+    margin: 0;
+    padding-left: .2rem;
+    /* margin: 0 0 0 .2rem; */
+    font-size: .6rem;
+    color: #eeb032;
+}
+
+.description {
+    padding: 0 .9rem;
+    margin: auto;
+}
+
+.description input {
+    width: 2.5cm;
+    color: #e9ecef;
+    text-align: center;
+}
+
+.description input:focus {
+    outline: none;
+}
+
+.description input[type=text] {
+    border: none;
+    border-bottom: .01cm #3f3f3f solid; 
+    background-color: #0f0f0f;
+}
+
+.description label {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#mic-button {
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #81bcf1;
+}
+
+#cancel-button, #confirm-button, #cancel-button-time, #confirm-button-time{
+    font-size: 1.5rem;
+}
+
+#cancel-button-time, #confirm-button-time, #cancel-button{
+    cursor: pointer;
+}
+
+#cancel-button, #cancel-button-time {
+    color: #ea5b7a;
+}
+
+#confirm-button {
+    color: #3f3f3f;
+    cursor: auto;
+}
+
+#confirm-button-time {
+    color: #68e1bc;
+}
+
+.valid-confirm-button {
+    cursor: pointer !important;
+    color: #68e1bc !important;
+}
+
+#confirm-button-time, #cancel-button-time {
+    padding-bottom: .2rem;
+}
+
+#time-start, #time-end{
+    cursor: pointer;
+}
+
+.border-click {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.2rem;
+    width: 3.2rem;
+    cursor: pointer;
+    border-radius: 8%;
+    border-bottom: .01px solid transparent;
+    /* box-shadow: rgb(0, 0, 0) 0px 0px 2px, rgba(151, 148, 148, 0.281) 0px 1px 1px; */
+    /* border-image: linear-gradient(40deg, purple, orange) .5; */
+    background: linear-gradient(#0f0f0f, #0f0f0fDD) padding-box, linear-gradient(45deg, slateblue, coral) border-box;
+}
+
+.labels {
+    color: #deaaff;
+}
+
+.buttons {
+    margin-top: .05cm;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.current-hh, .current-mm {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #e9ecef;
+}
+
+/*------------------------------------------------------------*/
+.overlay-content-container {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.time-container {
+    width: 100%;
+    height: 98%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+    padding: 0;
+}
+
+.scroll-time, .show-time {
+    margin-top: 2cm;
+    height: 1cm;
+    padding-bottom: 3rem;
+}
+
+.scroll-time {
+    transition: transform .1s ease;
+}
+
+.show-time {
+    transition: transform 2s ease;
+}
+
+#hh {
+   padding: 0 0 3rem 1.5rem;
+}
+
+#mm {
+    padding: 0 1.5rem 3rem 0;
+}

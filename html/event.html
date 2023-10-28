@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/common/base.css">
+    <link rel="stylesheet" href="../css/common/material-icons.css">
+    <link rel="stylesheet" href="../css/common/title-header.css">
+    <link rel="stylesheet" href="../css/common/ripple-button.css">
+    <link rel="stylesheet" href="../css/common/overlay.css">
+    <link rel="stylesheet" href="../css/event-images.css">
+    <link rel="stylesheet" href="../css/event.css">
+    <script defer src="../js/common/title-header.js"></script>
+    <script defer src="../js/common/ripple-button.js"></script>
+    <script defer src="../js/common/scrollable.js"></script>
+    <script defer src="../js/common/user-manager.js"></script>
+    <script defer src="../js/common/overlay.js"></script>
+    <script defer src="../js/event.js"></script>
+</head>
+<body>
+    <div class="container">
+        <title-header previous-page="main-menu.html">Eventos</title-header>
+
+        <div class="content-container">
+            <div class="tab-buttons-container">
+                <div class="tab-button-background">
+                    <div class="tab-button-background-slider"></div>
+                    <button class="current-events-button active-tab">Atuais</button>
+                    <button class="pending-events-button">Pendentes</button>
+                </div>
+            </div>
+            <ul class="tabs-container">
+                <li>
+                    <div class="events-tab current-events-tab">
+                        <div class="no-events-container no-current-events-container">
+                            <span class="material-symbols-outlined">event_busy</span>
+                            <p>Não possui nenhum evento atualmente!</p>
+                        </div>
+
+                        <ul class="events-list current-events-list hide-scrollbar display-hidden">
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="events-tab pending-events-tab">
+                        <div class="no-events-container no-pending-events-container display-hidden">
+                            <span class="material-symbols-outlined">pending_actions</span>
+                            <p>Não possui nenhum evento pendente!</p>
+                        </div>
+
+                        <ul class="events-list pending-events-list hide-scrollbar">
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <div class="add-event-button-container">
+                <span class="material-symbols-outlined add-event-button">add_circle</span>
+            </div>
+        </div>
+
+        <popup-overlay class="no-friends-overlay">
+            <span class="material-symbols-outlined no-friends-overlay-close-button">close</span>
+            <div class="no-friends-container">
+                <span class="material-symbols-outlined">sentiment_dissatisfied</span>
+                <p>Você não possui nenhum amigo, adicione amigos para criar um evento</p>
+            </div>
+        </popup-overlay>
+    </div>
+</body>
+</html>

@@ -1,0 +1,344 @@
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.content-container {
+    width: 100%;
+    height: 3.7cm;
+    padding-top: .8cm;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    color: #e9ecef;
+    position: relative;
+}
+
+
+.event-banner {
+    height: 1cm;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    border-radius: 3px;
+}
+
+.event-title-container {
+    width: 100%;
+    height: 1.1cm;
+    display: flex;
+    /* box-shadow: 0 0 4px 4px #0f0f0f inset; */
+}
+
+.event-title-background {
+    margin: auto;
+    width: max-content;
+    height: max-content;
+    border-radius: 10px;
+    background-color: #0f0f0f11;
+    backdrop-filter: blur(1px);
+}
+
+.event-title {
+    text-align: center;
+    height: 100%;
+    font-size: .35cm;
+    margin: 0;
+    text-shadow: 1px 1px #717172;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    color: #e9ecef;
+    width: 4.5cm;
+    overflow-wrap: break-word;
+}
+
+.date-time-container {
+    margin-top: .1cm;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #ea5b7a;
+    font-weight: bold;
+}
+
+.date-time-container > p {
+    font-size: .54rem;
+    margin: 0;
+    text-align: center;
+    padding: 0;
+}
+
+
+.options-container {
+    margin-top: .2cm;
+    height: .81cm;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.option-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.1rem;
+}
+
+.option-button > span {
+    position: absolute;
+    font-size: 50%
+}
+
+.options-container > span {
+    cursor: pointer;
+}
+
+.people-button, .people-button > span, .people-overlay-title {
+    color: #f7a160;
+}
+
+.location-button, .location-button > span, .location-overlay-title {
+    color: rgba(222,170,255,1);
+}
+
+.description-button, .description-button > span, .description-overlay-title {
+    color: rgba(104,192,255,1);
+}
+
+.overlay-title {
+    margin: 0;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.description-overlay .overlay-content-container, .location-overlay .overlay-content-container {
+    height: max-content !important;
+    position: relative;
+}
+
+.overlay-text-information-container {
+    width: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    height: max-content;
+    max-height: 2.7cm;
+    margin-bottom: .1cm;
+}
+
+.information-overlay-close-button {
+    position: absolute;
+    top: 1%;
+    left: 88%;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.overlay-text-information {
+    color: #e9ecef;
+    margin: 0;
+    padding: 0;
+    font-size: .7rem;
+    margin-top: .2cm;
+    padding: 0 .2cm;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.event-footer-container {
+    margin-top: .3cm;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .2cm;
+    width: 100%;
+}
+
+.event-footer-container > p {
+    font-size: .2cm;
+    margin-left: .1cm;
+}
+
+.leave-or-quit-button {
+    outline: none;
+    border: none;
+    background-color: #b62d43;
+    text-shadow: 0.5px 1px #411821;
+    color: #e9ecef;
+    border-radius: 4px;
+    min-width: 1.7cm;
+    max-width: 1.7cm;
+    width: 1.7cm;
+    height: 60%;
+    font-size: .25cm;
+    cursor: pointer;
+}
+
+.people-list {
+    width: 100%;
+    height: 2.7cm;
+    list-style-type: none;
+    margin: 0;
+    padding: .3cm 0 0 0;
+    overflow-y: scroll;
+    box-sizing: border-box;
+}
+
+.people-card {
+    width: 80%;
+    height: .7cm;
+    display: flex;
+    align-items: center;
+    gap: .1cm;
+    padding: .1cm 0;
+    margin: auto;
+}
+
+.people-card:not(:last-child) {
+    border-bottom: .03cm solid #3f3f3f;
+}
+
+.people-card > img {
+    height: 80%;
+    border-radius: 50%;
+}
+
+.people-card > p {
+    margin: 0;
+    color: #e9ecef;
+    font-size: .3cm;
+    display: flex;
+    align-items: center;
+}
+
+.event-owner-icon {
+    font-size: .3cm;
+    margin-left: .2cm;
+    text-align: center;
+    color: #fab47e;
+}
+
+
+.overlay-type-popup .overlay-content-container {
+    height: 1.5cm;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: .1cm;
+}
+
+.remove-event-popup-title-container {
+    width: 100%;
+    height: 1cm;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.remove-event-popup-title-container h1 {
+    color: #e9ecef;
+    font-size: .6rem;
+    text-align: center;
+    margin: .1cm 0 0 0;
+}
+
+.remove-event-popup-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.remove-event-popup-buttons button {
+    width: 40%;
+    border: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    margin-bottom: .1cm;
+    color: #e9ecef;
+    border-radius: .1cm;
+    font-size: .6rem;
+    height: .6cm;
+    outline: none;
+}
+
+.remove-event-popup-buttons .remove-cancel-button {
+    background-color: #3f3f3f;
+    text-shadow: 0.5px 1px #2b2a2a;
+}
+
+.remove-event-popup-buttons .remove-confirm-button {
+    background-color: #b62d43;
+    text-shadow: 0.5px 1px #411821;
+}
+
+
+.more-people-outer-circle {
+    position: relative;
+    font-size: .56cm;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555555;
+}
+
+.more-people-icon {
+    position: absolute;
+    font-size: .5cm;
+    color: #555555;
+}
+
+
+.event-location {
+    color: #deaaff;
+}
+
+.event-location > span {
+    color: #e9ecef;
+}
+
+.event-description {
+    color: #deaaff;
+}
+
+.event-description > span {
+    color: #e9ecef;
+}
+
+.created-by-label {
+    margin: 0;
+    color: #deaaff;
+}
+
+.created-by-label > span {
+    color: #e9ecef;
+}
+
+/* --------------------------------- */
+#edit-button {
+    background-color: #3f3f3f;
+    border-radius: 50%;
+    text-shadow: 0.2px 1px #242323;
+    width: .52cm;
+    height: .52cm;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    cursor: pointer;
+    margin: -1rem -1rem 0 0;
+    top: 4.7rem;
+    left: 9.2rem;
+}
+
+#icon-edit {
+    font-size: .8rem;
+    color: #e9ecef;
+}

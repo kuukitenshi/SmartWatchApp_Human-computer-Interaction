@@ -1,0 +1,72 @@
+.banner {
+    background-image: url("../images/event-pics/beach.jpg");
+    background-position-y: 50%;
+    background-size: 4.5cm 2cm;
+}
+
+.event-image-beach {
+    background-image: url("../images/event-pics/beach.jpg");
+    background-position-x: 70%;
+    background-position-y: 80%;
+    background-size: 2.3cm;
+}
+
+.event-image-forest {
+    background-image: url("../images/event-pics/forest.jpg");
+    background-position-x: 40%;
+    background-position-y: 20%;
+    background-size: 2.6cm;
+}
+
+.event-image-books {
+    background-image: url("../images/event-pics/books.jpg");
+    background-position-x: 59%;
+    background-position-y: 80%;
+    background-size: 3.2cm;
+}
+
+.event-image-food {
+    background-image: url("../images/event-pics/food.jpg");
+    background-position-x: 20%;
+    background-position-y: 20%;
+    background-size: 2.6cm;
+}
+
+.event-image-game {
+    background-image: url("../images/event-pics/game.jpg");
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-size: 3.4cm;
+}
+
+.event-image-movie {
+    background-image: url("../images/event-pics/movie.jpg");
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-size: 2.8cm;
+}
+
+.event-image-shop {
+    background-image: url("../images/event-pics/shop.jpg");
+    background-position-x: 40%;
+    background-position-y: 50%;
+    background-size: 2.3cm;
+}
+
+.event-image-travel {
+    background-image: url("../images/event-pics/travel.jpg");
+    background-position-x: 100%;
+    background-position-y: 80%;
+    background-size: 2.2cm;
+}
+
+.event-image-friends {
+    background-image: url("../images/event-pics/friends.jpg");
+    background-position-x: 50%;
+    background-position-y: 80%;
+    background-size: 2cm;
+}
+
+.button {
+    cursor: pointer !important;
+}

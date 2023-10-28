@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/common/base.css">
+    <link rel="stylesheet" href="../css/common/title-header.css">
+    <link rel="stylesheet" href="../css/common/material-icons.css">
+    <link rel="stylesheet" href="../css/common/steps-event-footer.css">
+    <link rel="stylesheet" href="../css/common/overlay.css">
+    <link rel="stylesheet" href="../css/edit-profile.css">
+    <script defer src="../js/common/title-header.js"></script>
+    <script defer src="../js/common/speech-recognition.js"></script>
+    <script defer src="../js/common/overlay.js"></script>
+    <script defer src="../js/common/user-manager.js"></script>
+    <script defer src="../js/edit-profile.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <title-header previous-page="profile.html">Editar perfil</title-header>
+
+        <div class="content-container">
+
+            <div class="content-preview">
+                <div class="your-profile">
+                    <image id="profile-picture" src="../images/event-pics/beach.jpg"></image>
+                    <div id="edit-button">
+                        <span id="icon-edit" class="material-symbols-outlined">edit</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="input-container">
+                <div class="border-container">
+                    <label>
+                        <input type="text" value="" placeholder="Nome" spellcheck="false"> <!---nome atual mudar-->
+                        <span id="mic-button" class="material-symbols-outlined">mic</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="code">
+                <p id="label-code">Código de amigo:</p>
+                <p id="code-num">123456</p>
+                <span id="info" class="material-symbols-outlined">info</span>
+            </div>
+
+            <div class="input-chars-popup display-hidden">
+                <div class="triangle"></div>
+                <span id="warning" class="material-symbols-outlined">warning</span>
+                <p id="text-warning-input-size">O nome deve ter no máximo 10 carateres.</p>
+            </div>
+
+            <div class="buttons-container">
+                <div id="cancel-button" class="button">Cancelar</div>
+                <div id="confirm-button" class="button">Confirmar</div>
+            </div>
+
+            <popup-overlay class="info-edit-profile-popup-overlay">
+                <div class="info-edit-profile-popup-title-container">
+                    <h1>Código não editável</h1>
+                </div>
+                <div id="close-button">
+                    <span id="icon-close" class="material-symbols-outlined">close</span>
+                </div>
+            </popup-overlay>
+
+            <display-overlay class="grid-photos-overlay">
+                <div class="first-container-grid">
+
+                    <div class="img-grid-container hide-scrollbar">
+
+                        <div id="elem1" class="grid-item"> <!--selected-elem-grid-border-->
+                            <img src="../images/myprofilepicture.png">
+                            <!-- <div id="selected-elem-grid-check">
+                                <span id="icon-check" class="material-symbols-outlined material-fill">check_circle</span>
+                            </div> -->
+                        </div>
+
+                        <div id="elem2" class="grid-item"><img src="../images/loli.webp"></div>
+                        <div id="elem3" class="grid-item"><img src="../images/andre.webp"></div>
+                        <div id="elem4" class="grid-item"><img src="../images/diogo.webp"></div>
+                        <div id="elem5" class="grid-item"><img src="../images/daniela.webp"></div>
+                        <div id="elem6" class="grid-item"><img src="../images/daniel.webp"></div>
+                        <div id="elem7" class="grid-item"><img src="../images/bras.webp"></div>
+                        <div id="elem8" class="grid-item"><img src="../images/goncalo.webp"></div>
+                        <div id="elem9" class="grid-item"><img src="../images/gui.webp"></div>
+                        <div id="elem10" class="grid-item"><img src="../images/joao.webp"></div>
+                        <div id="elem11" class="grid-item"><img src="../images/martim.png"></div>
+                        <div id="elem12" class="grid-item"><img src="../images/pilo.webp"></div>
+                        <div id="elem13" class="grid-item"><img src="../images/rafa.webp"></div>
+                        <div id="elem14" class="grid-item"><img src="../images/wang.webp"></div>
+                        <div id="elem15" class="grid-item"><img src="../images/sadboy.jpg"></div>
+
+                    </div>
+                </div>
+            </display-overlay>
+
+        </div>
+    </div>
+</body>
+
+</html>

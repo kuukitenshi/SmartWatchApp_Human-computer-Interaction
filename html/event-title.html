@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/common/base.css">
+    <link rel="stylesheet" href="../css/common/material-icons.css">
+    <link rel="stylesheet" href="../css/common/title-header.css">
+    <link rel="stylesheet" href="../css/common/steps-event-footer.css">
+    <link rel="stylesheet" href="../css/common/overlay.css">
+    <link rel="stylesheet" href="../css/event-title.css">
+    <script defer src="../js/common/title-header.js"></script>
+    <script defer src="../js/common/speech-recognition.js"></script>
+    <script defer src="../js/common/user-manager.js"></script>
+    <script defer src="../js/common/overlay.js"></script>
+    <script defer src="../js/event-title.js"></script>
+</head>
+<body>
+    
+    <title-header previous-page="event.html">Criar Evento</title-header>
+
+    <div class="container">
+        <div class="content-container">
+           <p id="title" class="event">Título</p> 
+           
+           <div class="input-container">
+                <div class="border-container">
+                    <label>
+                        <input type="text" value="" placeholder="Título" spellcheck="false">
+                        <span id="mic-button" class="material-symbols-outlined">mic</span>
+                    </label>
+                </div>
+           </div>
+
+           <div class="input-chars-popup display-hidden">
+                <div class="triangle"></div>
+                <span id="warning" class="material-symbols-outlined">warning</span>
+                <p id="text-warning-input-size">O título deve ter no máximo 20 carateres.</p>
+            </div>
+        
+        </div>
+
+        <div class="buttons-container">
+            <div id="cancel-button" class="button">Cancelar</div>
+            <div id="next-button" class="button">Seguinte</div>
+        </div>
+    </div>
+</body>
+</html>

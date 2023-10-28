@@ -1,0 +1,122 @@
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.content-container {
+    width: 100%;
+    height: 3.7cm;
+    padding-top: .8cm;
+}
+
+.no-requests-container {
+    width: 100%;
+    height: 3.5cm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: .2cm;
+}
+
+.no-requests-container span {
+    font-size: 1.6cm;
+    color: #deaaff;
+}
+
+.no-requests-container p {
+    margin: 0;
+    font-size: .6em;
+    color: #e9ecef;
+    text-align: center;
+}
+
+.friend-requests-list {
+    width: 100%;
+    overflow-y: scroll;
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.friend-request {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    height: .9cm;
+    margin-bottom: .2cm;
+    /* transition: border-bottom 1s linear; */
+}
+
+.friend-request:not(:last-child) {
+    border-bottom: .03cm solid #3f3f3f;
+}
+
+.friend-request-profile {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: .05cm;
+    inline-size: 5rem;
+    overflow: hidden; 
+}
+
+.friend-request-profile img {
+    height: 70%;
+    border-radius: 50%;
+}
+
+.friend-request-profile p {
+    color: #e9ecef;
+    font-size: .26cm;
+}
+
+.friend-request-buttons {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: .1cm;
+}
+
+.friend-request-buttons span {
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.friend-request-buttons .friend-accept-button {
+    color: #68e1bc;
+}
+
+.friend-request-buttons .friend-reject-button {
+    color: #ea5b7a;
+}
+
+.disappear-request {
+    animation: request-disappear-animation .4s ease forwards, requests-scroll-animation .3s ease .4s forwards;
+}
+
+@keyframes request-disappear-animation {
+    to {
+        transform: scaleY(0);
+    }
+}
+
+@keyframes requests-scroll-animation {
+    to {
+        height: 0;
+        margin: 0;
+    }
+}
+
+.friend-rejected > .ripple-effect {
+    background-color: #ea5b7a;
+}
+
+.friend-accepted > .ripple-effect {
+    background-color: #68e1bc; 
+}

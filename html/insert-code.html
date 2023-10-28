@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/common/base.css">
+    <link rel="stylesheet" href="../css/common/material-icons.css">
+    <link rel="stylesheet" href="../css/common/title-header.css">
+    <link rel="stylesheet" href="../css/insert-code.css">
+    <script defer src="../js/common/title-header.js"></script>
+    <script defer src="../js/common/speech-recognition.js"></script>
+    <script defer src="../js/common/user-manager.js"></script>
+    <script defer src="../js/insert-code.js"></script>
+</head>
+<body>
+    <div class="container">
+        <title-header previous-page="add-friend.html">Introduzir código</title-header>
+        <div class="your-code-container">
+            <p>O teu código:</p>
+            <p id="your-friend-code">140582</p>
+        </div>
+        <div class="insert-code-container">
+            <label for="code-textbox">Introduza o código do seu amigo:</label>
+            <div class="textbox-container">
+                <input type="text" id="code-textbox" placeholder="123456">
+                <span id="microphone-button" class="material-symbols-outlined">mic</span>
+            </div>
+            <div class="error-message-container">
+                <span class="material-symbols-outlined">warning</span>
+                <p id="error-message"></p>
+            </div>
+        </div>
+        <div class="input-chars-popup display-hidden">
+            <div class="triangle"></div>
+            <span id="warning" class="material-symbols-outlined">warning</span>
+            <p id="text-warning-input-size">O código deve ter no máximo 6 dígitos.</p>
+        </div>
+        <div class="buttons-container">
+            <div id="cancel-button" class="button">Cancelar</div>
+            <div id="add-button" class="button">Adicionar</div>
+        </div>
+    </div>
+</body>
+</html>

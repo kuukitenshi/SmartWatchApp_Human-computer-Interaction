@@ -1,0 +1,41 @@
+body {
+    background: linear-gradient(#d39d30, #0f0f0f);
+}
+
+.title-header {
+    background-color: transparent;
+}
+
+.content-container {
+    padding-top: .8cm;
+    width: 100%;
+    height: 3.7cm;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-container span {
+    font-size: 1.8cm;
+    color: #eeb032;
+    animation: icon-show-animation 1s ease;
+}
+
+.content-container p {
+    color: #e9ecef;
+    text-align: center;
+    font-size: .8rem;
+}
+
+@keyframes icon-show-animation {
+    0% {
+        transform: translate(-4.5cm, 0)
+    }
+    60% {
+        transform: translate(0.7cm, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}

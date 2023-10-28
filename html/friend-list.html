@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/common/base.css">
+    <link rel="stylesheet" href="../css/common/material-icons.css">
+    <link rel="stylesheet" href="../css/common/title-header.css">
+    <link rel="stylesheet" href="../css/common/ripple-button.css">
+    <link rel="stylesheet" href="../css/common/overlay.css">
+    <link rel="stylesheet" href="../css/friend-list.css">
+    <script defer src="../js/common/title-header.js"></script>
+    <script defer src="../js/common/ripple-button.js"></script>
+    <script defer src="../js/common/overlay.js"></script>
+    <script defer src="../js/common/user-manager.js"></script>
+    <script defer src="../js/friend-list.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <title-header previous-page="profile.html">Amigos</title-header>
+
+        <div class="content-container">
+
+            <div class="friends-header">
+                <h1>Lista de Amigos</h1>
+                <div id="friends-request-button-container">
+                    <span id="friends-request-button" class="material-symbols-outlined">circle
+                        <span class="material-symbols-outlined material-fill">mail
+                            <div id="friends-request-amount" class="display-hidden"></div>
+                        </span>
+                    </span>
+                    <!-- <div id="friends-request-amount">2</div> -->
+                </div>
+                <!-- <span id="add-friend-button" class="material-symbols-outlined">add_circle</span> -->
+
+            </div>
+
+            <div class="no-friends-container">
+                <span class="material-symbols-outlined">sentiment_dissatisfied</span>
+                <p>Não possui nenhum amigo</p>
+            </div>
+
+            <ul class="friends-container display-hidden hide-scrollbar"></ul>
+        </div>
+
+        <div class="add-friend-button-container">
+            <span class="material-symbols-outlined add-friend-button">add_circle</span>
+        </div>
+    </div>
+    
+    <display-overlay class="friend-card-overlay">
+        <div class="friend-overlay-profile-container">
+            <img class="friend-overlay-profile-image" src="../images/profile.png">
+            <div class="friend-overlay-profile-info">
+                <p class="friend-overlay-profile-name" id="profile-name">Friend name</p>
+                <p class="friend-overlay-profile-code">140582</p>
+            </div>
+        </div>
+        <div class="remove-friend-button-container">
+            <button id="remove-friend-button" class="ripple-button">Remover</button>
+        </div>
+    </display-overlay>
+
+    <popup-overlay class="remove-confirm-popup-overlay">
+        <div class="remove-confirm-popup-title-container">
+            <h1></h1> <!---remover?-->
+        </div>
+        <div class="remove-confirm-popup-buttons">
+            <button class="remove-cancel-button ripple-button">Cancelar</button>
+            <button class="remove-confirm-button ripple-button">Remover</button>
+        </div>
+    </popup-overlay>
+    
+</body>
+
+</html>

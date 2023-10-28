@@ -1,0 +1,117 @@
+/* Shared */
+
+.overlay-background {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    backdrop-filter: blur(6px);
+}
+
+.overlay-blur-in-animation {
+    animation: overlay-background-blur-animation .4s ease-in;
+}
+
+.overlay-blur-out-animation {
+    animation: overlay-background-blur-animation .4s ease-out reverse forwards;
+}
+
+@keyframes overlay-background-blur-animation {
+    from {
+        backdrop-filter: blur(0px);
+    }
+    to {
+        backdrop-filter: blur(6px);
+    }
+}
+
+
+/* Display Overlay */
+
+.overlay-down-arrow-container {
+    background-color: #0f0f0fAA;
+    width: 100%;
+    display: flex;
+    height: .4cm;
+}
+
+.overlay-down-arrow {
+    transform: rotate(-90deg);
+    font-size: .5cm;
+    margin: auto;
+    cursor: pointer;
+    animation: overlay-down-arrow-animation .4s ease alternate-reverse infinite;
+}
+
+@keyframes overlay-down-arrow-animation {
+    from {
+        transform: translate(0, 0.04cm) rotate(-90deg);
+    }
+    to {
+        transform: translate(0, -0.04cm) rotate(-90deg);
+    }
+}
+
+.overlay-type-display .overlay-container {
+    padding-top: .8cm;
+}
+
+.overlay-type-display .overlay-content-container {
+    background-color: #0f0f0fAA;
+    height: 3.3cm;
+}
+
+.overlay-type-display .overlay-show-animation {
+    animation: overlay-slide-animation .4s ease;
+}
+
+.overlay-type-display .overlay-hide-animation {
+    animation: overlay-slide-animation .4s ease reverse forwards;
+}
+
+@keyframes overlay-slide-animation {
+    from {
+        transform: translate(0, 4.5cm);
+    }
+    to {
+        transform: translate(0, 0);
+    }
+}
+
+/* Popup Overlay */
+
+.overlay-type-popup .overlay-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay-type-popup .overlay-content-container {
+    width: 80%;
+    height: 2.5cm;
+    background-color: #0f0f0fAA;
+}
+
+.overlay-type-popup .overlay-show-animation {
+    animation: overlay-popup-animation .4s ease;
+}
+
+.overlay-type-popup .overlay-hide-animation {
+    animation: overlay-popup-animation .4s ease reverse forwards;
+}
+
+@keyframes overlay-popup-animation {
+    0% {
+        transform: scale(0);
+    }
+    60% {
+        transform: scale(1.2); 
+    }
+    100% {
+        transform: scale(1);
+    }
+}

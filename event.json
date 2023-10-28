@@ -1,0 +1,20 @@
+"creating_event": {
+    "title": "",
+    "image": "../images/...",
+    "people": [102930, 109304],
+    "start_time": "12:00",
+    "end_time": "14:00",
+    "date": "19/04/2024",
+    "location": "llll",
+    "description": "dlaldadla",
+    "created_by": 120304
+}
+
+"user_events": {
+    "current": [{}],
+    "pending": [{}]
+}
+
+
+
+{"title": "Test1", "image": "gamepad.png", "people": [101010, 202020, 303030, 404040], "start_time": "12:00", "end_time": "14:00", "date": "19/04/2023", "location": "Lisboa", "description": "teste", "created_by": 707070}
