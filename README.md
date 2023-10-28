@@ -15,4 +15,4 @@ Finally, all of our hard work resulted in a ```perfect score```.
 ---
 ## Aplication
 
-The interface can be viewed by opening the ```index.html``` file in a browser (preferably Chrome).
+The interface can be viewed by opening the ```index.html``` file in a browser (preferably ```Chrome```).
