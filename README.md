@@ -16,3 +16,8 @@ Finally, all of our hard work resulted in a ```perfect score```.
 ## Aplication
 
 The interface can be viewed by opening the ```index.html``` file in a browser (preferably ```Chrome```).
+
+Or just access the following link:
+```
+https://kuukitenshi.github.io/SmartWatchApp_Human-computer-Interaction/
+```
