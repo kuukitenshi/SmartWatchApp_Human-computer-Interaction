@@ -2,7 +2,7 @@
 
 This project was a collaborative effort with other student for our ```Human-Computer Interaction``` subject.
 
-The project's objectives was to create an ```interface for a smartwatch aplication``` using ```JavaScript, HTML and CSS language```.
+The project's objectives was to create an ```interface for a smartwatch aplication``` using ```JavaScript, HTML and CSS languages```.
 
 Through this project, we enhanced our knowledge of designing a good interface, focus on ```accessibility, aesthetics, and functionality```. 
 
